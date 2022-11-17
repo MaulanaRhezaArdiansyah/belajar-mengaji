@@ -1,0 +1,93 @@
+@import url(font.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+/* utility class */
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+/* style */
+
+.course-title {
+  background: rgb(8, 8, 8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.brand {
+  margin: 0 30px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.title {
+  font-weight: 300;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  height: 450px;
+}
+
+.list-materi {
+  width: 30%;
+  background: black;
+}
+
+.list-materi-detail {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.video {
+  background: rgb(24, 24, 24);
+  width: 70%;
+}
+
+.note {
+  background: rgb(14, 11, 11);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 200px;
+}
+
+.note-text {
+  margin-left: 30px;
+  margin-top: 10px;
+}
