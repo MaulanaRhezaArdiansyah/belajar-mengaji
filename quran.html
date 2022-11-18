@@ -4,29 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Course</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Amanah Mulia</title>
+    <link rel="stylesheet" href="css/content.css" />
   </head>
   <body>
     <div class="course-title text-white">
       <div class="left">
-        <p class="brand">AmanahMulia</p>
-        <p class="title">Belajar Mengaji</p>
+        <p class="brand"><a href="home.html">AmanahMulia</a></p>
+        <p class="title">Belajar Al-Qur'an</p>
         <span class="garis">/</span>
-        <p class="title-content-text">4 Tali Keimanan</p>
+        <p class="title-content-recent">Bacaan</p>
       </div>
       <div class="right">
-        <img src="images/rheza.jpeg" alt="profile" class="profile" />
+        <a href="profile.html">
+          <img src="images/rheza.jpeg" alt="profile" class="profile" />
+        </a>
       </div>
     </div>
     <div class="content">
       <div class="list-materi text-white">
         <div class="list-materi-detail">
           <p class="title-content title-content-text">4 Tali Keimanan</p>
-          <p id="syukur" onclick="bersyukur()">1. Bersyukur</p>
-          <p id="agung" onclick="mengagungkan()">2. Mengagungkan</p>
-          <p id="sungguh" onclick="mempersungguh()">3. Mempersungguh</p>
-          <p id="doa" onclick="berdoa()">4. Berdoa</p>
+          <p id="syukur" class="materi" onclick="bersyukur()">1. Bersyukur</p>
+          <p id="agung" class="materi" onclick="mengagungkan()">
+            2. Mengagungkan
+          </p>
+          <p id="sungguh" class="materi" onclick="mempersungguh()">
+            3. Mempersungguh
+          </p>
+          <p id="doa" class="materi" onclick="berdoa()">4. Berdoa</p>
         </div>
       </div>
       <div class="video" id="video-content"></div>
@@ -36,6 +42,6 @@
         <p>Tambahkan catatan . . .</p>
       </div>
     </div>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
