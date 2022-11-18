@@ -52,6 +52,15 @@ body {
   font-weight: 300;
 }
 
+.garis {
+  margin: 0 0 0 15px;
+}
+
+.title-content-text {
+  margin: 0 15px;
+  color: rgb(197, 197, 197);
+}
+
 .profile {
   width: 30px;
   height: 30px;
@@ -62,6 +71,11 @@ body {
 .content {
   display: flex;
   height: 450px;
+}
+
+.title-content {
+  margin-left: -10px;
+  font-size: 18px;
 }
 
 .list-materi {
