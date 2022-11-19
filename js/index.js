@@ -2,6 +2,9 @@ let videoContent = document.getElementById("video-content");
 let videoCourse = document.createElement("video");
 let source = document.createElement("source");
 
+let noteText = document.querySelector(".note-text");
+let catatan = document.getElementById("catatan");
+
 function bersyukur() {
   videoContent.innerHTML = `
   <video width="100%" height="100%" controls>
@@ -28,4 +31,8 @@ function berdoa() {
   <video width="100%" height="100%" controls>
     <source src="videos/4.mp4">
   </video>`;
+}
+
+function tampilCatatan() {
+  noteText.innerHTML += `<p>${catatan.value}</p>`;
 }
