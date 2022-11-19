@@ -209,4 +209,20 @@ a:hover {
     height: 250px;
     overflow: auto;
   }
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tombol {
+    padding: 10px 0;
+    width: 100px;
+    margin-top: 20px;
+    align-self: flex-end;
+  }
+
+  .list-materi-detail {
+    margin-bottom: 35px;
+  }
 }
