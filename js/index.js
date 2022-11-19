@@ -36,3 +36,14 @@ function berdoa() {
 function tampilCatatan() {
   noteText.innerHTML += `<p>${catatan.value}</p>`;
 }
+
+/*  Preloader */
+window.addEventListener("load", () => {
+  const preloader = document.querySelector(".preloader");
+
+  document.querySelector(".preloader").classList.add("preloader--hidden");
+
+  document.querySelector(".preloader").addEventListener("transitioned", () => {
+    document.body.removeChild(preloader);
+  });
+});
