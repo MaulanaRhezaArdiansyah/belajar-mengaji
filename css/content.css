@@ -1,5 +1,11 @@
 @import url(font.css);
 
+:root {
+  --color-theme-basic: rgb(8, 8, 8);
+  --choco-primary: #4d2e07;
+  --choco-hover: #af8f68;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,11 +29,12 @@ body {
 /* style */
 
 .course-title {
-  background: rgb(8, 8, 8);
+  background: var(--color-theme-basic);
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  border-bottom: 1px solid #4d2e07;
 }
 
 .left {
@@ -53,7 +60,7 @@ body {
 }
 
 .title {
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .garis {
@@ -70,15 +77,22 @@ body {
 }
 
 .profile {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin-right: 30px;
   border-radius: 50%;
+  border: 2px solid var(--choco-primary);
+  transition: 0.3s;
+}
+
+.profile:hover {
+  border: 2px solid var(--choco-hover);
 }
 
 .content {
   display: flex;
   height: 450px;
+  border-bottom: 1px solid #4d2e07;
 }
 
 .title-content {
@@ -120,7 +134,7 @@ body {
 
 .materi:hover {
   cursor: pointer;
-  color: rgb(190, 190, 190);
+  color: var(--choco-hover);
 }
 
 a {
@@ -130,7 +144,7 @@ a {
 }
 
 a:hover {
-  color: rgb(190, 190, 190);
+  color: var(--choco-hover);
 }
 
 #catatan {
@@ -143,12 +157,13 @@ a:hover {
   border-bottom: 1px solid white;
   font-size: 16px;
   font-family: "Karla", sans-serif;
+  border-bottom: 1px solid var(--choco-hover);
 }
 
 #catatan:focus {
   outline: none;
   font-size: 16px;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid var(--choco-primary);
 }
 
 #catatan::placeholder {
@@ -156,8 +171,8 @@ a:hover {
 }
 
 #tombol {
-  background: rgb(12, 132, 148);
-  color: black;
+  background: var(--choco-primary);
+  color: white;
   border: none;
   padding: 10px 15px;
   text-align: center;
@@ -171,7 +186,8 @@ a:hover {
 }
 
 #tombol:hover {
-  background: rgb(55, 169, 184);
+  background: var(--choco-hover);
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
@@ -184,7 +200,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid var(--choco-primary);
   }
 
   .brand-responsive {
@@ -208,6 +224,7 @@ a:hover {
     width: 100%;
     height: 250px;
     overflow: auto;
+    border-bottom: 1px solid var(--choco-primary);
   }
 
   .comment {

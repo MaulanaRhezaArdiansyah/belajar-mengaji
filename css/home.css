@@ -27,14 +27,20 @@ body {
 }
 
 .list-content {
-  background: rgb(36, 28, 28);
+  background: #422706;
+  /* background: rgb(0, 83, 109); */
   padding: 25px 60px;
   height: 200px;
   border-radius: 10px;
+  box-shadow: 0 0 5px 0 #422706;
 }
 
 p {
   font-size: 20px;
+}
+
+.desc {
+  font-weight: 400;
 }
 
 a {
@@ -44,5 +50,5 @@ a {
 }
 
 a:hover {
-  color: rgb(190, 190, 190);
+  color: #af8f68;
 }
